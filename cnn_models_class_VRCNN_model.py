@@ -277,7 +277,7 @@ def showImg(inp):
     #tem.save("D:/rec/FromPython%f.jpg" % time.time())
 
 def test_all_ckpt(modelPath):
-    low_img = r"E:\WJJ\av1_crlc\cnn_train\test_set\QP63"
+    low_img = r"E:\WJJ\av1_crlc\cnn_train\test_set\QP53"
     heigh_img = r"E:\WJJ\av1_crlc\cnn_train\test_set\label"
 
     #low_img = r"E:\zhen\av2\10bit_frame\highbit_frame_qp53"
@@ -359,7 +359,7 @@ if __name__ == '__main__':
 
 
      #test_all_ckpt(r"E:\WJJ\aom\aom_build\Release\checkpoints\VRCNN_v1_qp32_20210803")
-     test_all_ckpt(r"E:\WJJ\aom\aom_build\Release\checkpoints\VRCNN_v1_qp63_20210803")
+     test_all_ckpt(r"E:\WJJ\aom\aom_build\Release\checkpoints\VRCNN_v1_qp53_20210812")
      # init(45, 654)
      # dgr = r"E:\WJJ\av1_crlc\cnn_train\test\QP32\label\BasketballDrill_832x480.yuv"
      # src = r"E:\WJJ\av1_crlc\cnn_train\test\QP32\label\BasketballDrill_832x480.yuv"

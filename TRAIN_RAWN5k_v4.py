@@ -11,7 +11,7 @@ from UTILS_vrcnn import *
 tf.logging.set_verbosity(tf.logging.WARN)
 # os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 
-EXP_DATA = 'VRCNN_v2_qp28_20210806'
+EXP_DATA = '5kmodel_v4_qp63_20210815'
 LOW_DATA_PATH = r"E:\0WZY\Data_Set\Train_Set\av1_deblock_nocdefLr"  # The path where data is stored
 HIGH_DATA_PATH = r"E:\0WZY\Data_Set\Train_Set\div2k_train_hr_yuv"  # The path where label is stored
 LOG_PATH = "./logs/%s/" % (EXP_DATA)
@@ -23,8 +23,8 @@ BASE_LR = 1e-4  # Base learning rate
 LR_DECAY_RATE = 0.5
 LR_DECAY_STEP = 25
 MAX_EPOCH = 100
-QP_MIN=25
-QP_MAX=30
+QP_MIN=55
+QP_MAX=63
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--model_path")

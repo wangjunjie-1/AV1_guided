@@ -13,8 +13,8 @@ def guided_model_5k(input_tensor):
         tensor=ResBlock(tensor,"conv_layer%02d"%(convId),times=1)
         convId+=1
 
-    conv_w1 = tf.get_variable("conv_w1", [3, 3, 12, 2], initializer=tf.contrib.layers.xavier_initializer())
-    conv_b1 = tf.get_variable("conv_b1", [2], initializer=tf.constant_initializer(0))
+    conv_w1 = tf.get_variable("conv_w1", [3, 3, 12, 4], initializer=tf.contrib.layers.xavier_initializer())
+    conv_b1 = tf.get_variable("conv_b1", [4], initializer=tf.constant_initializer(0))
     tf.add_to_collection(tf.GraphKeys.WEIGHTS, tf.contrib.layers.l2_regularizer(1.)(conv_w0))
 
     tensor = tf.nn.bias_add(tf.nn.conv2d(tensor, conv_w1, strides=[1, 1, 1, 1], padding='SAME'), conv_b1)
